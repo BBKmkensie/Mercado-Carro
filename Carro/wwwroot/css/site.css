@@ -1,0 +1,119 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url(https://images.alphacoders.com/545/545755.jpg)
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: linear-gradient(90deg, #c82333 0%, #dc3545 100%);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.form-group a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s, text-decoration 0.2s;
+    margin: 0 5px;
+}
+
+.form-group a:hover, .form-group a:focus {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.col-md-4.shadow {
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    background: rgba(255,255,255,0.92);
+    padding: 2.5rem 2rem;
+    animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-secondary {
+    color: white;
+}
+
+.btn-primary, .btn-secondary {
+    color: white;
+}
+
+.btn-danger {
+    color: #fff !important;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(220,53,69,0.10);
+}
+
+.btn-danger:hover, .btn-danger:focus {
+    background-color: #c82333 !important;
+    color: #fff !important;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(220,53,69,0.18);
+}
+
+.btn-google {
+    background: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    transition: box-shadow 0.2s, border 0.2s, background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.btn-google:hover, .btn-google:focus {
+    box-shadow: 0 6px 18px rgba(66,133,244,0.18);
+    border: 1.5px solid #4285f4;
+    color: #4285f4;
+    background: #f8faff;
+    transform: translateY(-2px) scale(1.03);
+}
+
+.btn-google img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}

@@ -1,0 +1,105 @@
+﻿@model EditarUserViewModel
+@{
+    string Rol = "";
+    if (User.Identity.IsAuthenticated)
+    {
+        Rol = User.FindFirst(ClaimTypes.Role).Value;
+    }
+
+    ViewData["Title"] = "CrearUser";
+}
+
+
+<div class="card text-center">
+    <div class="card-header">
+        Creacion de Usuarios
+    </div>
+
+    @if(Model.Rol == "SuperAdministrador")
+    {
+        <div class="card-body">
+            <a asp-action="EditarUsuario"
+           class="btn btn-outline-primary"><i class="fa-solid fa-users me-2"></i>Volver a la Administración</a>
+        </div>
+    }
+
+    
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditarUsuario" method="Post" onsubmit="alert('Se cerrara su session!')">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input asp-for="Id" value="@Model.Id" class="form-control" type="hidden"/>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" value="@Model.Name"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" value="@Model.Email"/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+          
+            @if (Rol == "SuperAdministrador")
+            {
+                <div class="form-group">
+                        <label asp-for="Username" class="control-label"></label>
+                        <input asp-for="Username" class="form-control" value="@Model.Username" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+            }
+               
+                
+            
+            
+            @if (Rol == "SuperAdministrador" )
+            {
+                @if(Model.Rol == "SuperAdministrador"){
+                    <div class="form-group">
+                        <label asp-for="Rol" class="control-label"></label>
+                        <input asp-for="Rol" readonly class="form-control disabled" value="@Model.Rol" />
+                        <span asp-validation-for="Rol" class="text-danger"></span>
+                    </div>
+                }else{
+                    <div class="form-group">
+                        <label asp-for="Rol" class="control-label"></label>
+                        <select asp-for="Rol" class="form-control">
+                            <option value="Administrador">Administrador</option>
+                            <option value="Jefe de RRHH">Jefe de RRHH</option>
+                            <option value="Asistente de RRHH">Asistente de RRHH</option>
+                        </select>
+                        <span asp-validation-for="Rol" class="text-danger"></span>
+                    </div>
+                }
+             }else{
+                <div class="form-group">
+                    <label asp-for="Rol" class="control-label"></label>
+                    <input asp-for="Rol" readonly class="form-control disabled" value="@Model.Rol" />
+                    <span asp-validation-for="Rol" class="text-danger"></span>
+                </div>
+             }
+            <div class="form-group">
+                <label  class="control-label">Nueva Pasword</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Guardar Cambios" class="btn btn-danger col-12" />
+            </div>
+        </form>
+
+
+
+     
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

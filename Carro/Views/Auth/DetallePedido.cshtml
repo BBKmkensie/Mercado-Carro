@@ -1,0 +1,36 @@
+﻿@model List<DetallePedido>
+
+@{
+    ViewData["Title"] = "Detalle Pedido";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalle de Pedido <strong>@Model.First().PedidoId</strong></h2>
+<h3>Fecha Pedido: <strong>@Model.First().Pedido.FechaPedido</strong></h3>
+<h3>Total Pedido: <strong>@string.Format(new System.Globalization.CultureInfo("es-CL"), "{0:C}",@Model.First().Pedido.Total)</strong></h3>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Producto</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Producto.ProductId</td>
+                <td>@item.Producto.Nombre</td>
+                <td>@string.Format(new System.Globalization.CultureInfo("es-CL"), "{0:C}", item.Producto.Precio)</td>
+                <td>@item.Cantidad</td>
+                <td>@string.Format(new System.Globalization.CultureInfo("es-CL"), "{0:C}", item.Cantidad * item.Producto.Precio)</td>
+            </tr>
+        }
+    </tbody>
+</table>

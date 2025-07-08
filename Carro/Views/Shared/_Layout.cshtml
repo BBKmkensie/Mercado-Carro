@@ -1,0 +1,133 @@
+﻿@inject AppDbContext context
+@inject CarroCompra carro
+
+@{
+    string Rol = "";
+    if (User.Identity.IsAuthenticated)
+    { 
+        foreach (var claim in User.Claims)
+        {
+            if(claim.Value == "Administrador"){
+                Rol = "Administrador";
+            }
+            if (claim.Value == "SuperAdministrador")
+            {
+                Rol = "Administrador";
+            }
+            if (claim.Value == "Cliente")
+            {
+                Rol = "Cliente";
+            }
+        }
+    }
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - La Moda es Nuestra</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Carro.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Clientes">Tienda</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdwon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    @foreach (var item in context.tblCategorias.ToList())
+                                    {
+                                        <a asp-action="Clientes" asp-controller="Home" asp-route-CategoryId="@item.CategoryId" class="dropdown-item">@item.Descripcion</a>
+                                    }
+                                </div>
+                            </li>
+                        @if(Rol =="Administrador"){
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index">Administrar Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Administrar Productos</a>
+                            </li>
+                        }
+                        
+                    </ul>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-dark position-relative" asp-controller="Carro" asp-action="Index">
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                                <span class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger">@carro.GetItemsCarro().Count</span>
+                            </a>
+
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-dark position-relative" asp-controller="Pedido" asp-action="ConfirmarPedido">
+                                <i class="fas fa-credit-card fa-2x"></i>
+                                <span class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger">@carro.GetTotal()</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <ul class="navbar-nav d-flex me-5">
+                            <li class="nav-item dropdown me-5">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdwon" role="button" data-bs-toggle="dropdown" aria-expanded="false" ex>
+                                    <i class=" fa-solid fa-user-large me-2"></i>
+                                    @User.Identity.Name.ToUpper()
+                                </a>
+                                <ul class="dropdown-menu me-5" aria-labelledby="navbarDropdwn">
+                                    <li><a class="dropdown-item" asp-controller="Auth" asp-action="Profile">Ver Perfil</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Auth" asp-action="HistorialPedidos">Ver Hitorial de Compras</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Auth" asp-action="LogOut">Cerrar Session</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    }
+                    else
+                    {
+                        <div class="d-flex">
+                            <a asp-controller="Auth" asp-action="LoginIn" class="btn btn-danger">Iniciar Session</a>
+                            <a asp-controller="Auth" asp-action="Registro" class="btn btn-danger ms-2">Registro</a>
+                        </div>
+                    }
+                   
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - TodoVehiculo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

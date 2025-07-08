@@ -1,0 +1,249 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Everest\\Documents\\Carro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Usuarios\\EditarUsuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Views\\Usuarios\\EditarUsuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Clientes\\LoginIn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Views\\Clientes\\LoginIn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\_ViewStart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Views\\_ViewStart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\_ViewImports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Views\\_ViewImports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Models\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Models\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Models\\EditarUserViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Models\\EditarUserViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Models\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Models\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Auth\\Profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Views\\Auth\\Profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Controllers\\UsuariosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Controllers\\UsuariosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Products\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\Views\\Products\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Everest\\Documents\\Carro\\Carro\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Carro\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Clientes\\LoginIn.cshtml",
+              "RelativeDocumentMoniker": "Carro\\Views\\Clientes\\LoginIn.cshtml",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Clientes\\LoginIn.cshtml",
+              "RelativeToolTip": "Carro\\Views\\Clientes\\LoginIn.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T03:14:21.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Carro\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Carro\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T02:18:08.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Carro\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Carro\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T02:00:52.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Carro\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Carro\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T02:00:51.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Carro\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Carro\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T02:00:49.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Carro\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Models\\Usuario.cs",
+              "RelativeToolTip": "Carro\\Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T01:53:07.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Carro\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Carro\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T01:58:16.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditarUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Models\\EditarUserViewModel.cs",
+              "RelativeDocumentMoniker": "Carro\\Models\\EditarUserViewModel.cs",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Models\\EditarUserViewModel.cs",
+              "RelativeToolTip": "Carro\\Models\\EditarUserViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T01:54:21.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Carro\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Carro\\Models\\AppDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T01:52:55.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Auth\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Carro\\Views\\Auth\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Auth\\Profile.cshtml",
+              "RelativeToolTip": "Carro\\Views\\Auth\\Profile.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACoAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T01:38:37.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditarUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Usuarios\\EditarUsuario.cshtml",
+              "RelativeDocumentMoniker": "Carro\\Views\\Usuarios\\EditarUsuario.cshtml",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Usuarios\\EditarUsuario.cshtml",
+              "RelativeToolTip": "Carro\\Views\\Usuarios\\EditarUsuario.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T01:10:11.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Carro\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Carro\\Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T00:10:46.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Carro\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "Carro\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T22:14:47.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\appsettings.json",
+              "RelativeDocumentMoniker": "Carro\\appsettings.json",
+              "ToolTip": "C:\\Users\\Everest\\Documents\\Carro\\Carro\\appsettings.json",
+              "RelativeToolTip": "Carro\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-18T21:24:48.248Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

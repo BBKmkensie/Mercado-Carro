@@ -1,0 +1,56 @@
+﻿@model ProfileViewModel
+
+@{
+    string Rol = "";
+    if (User.Identity.IsAuthenticated)
+    {
+        foreach (var claim in User.Claims)
+        {
+            if (claim.Value == "Administrador")
+            {
+                Rol = "SuperAdministrador";
+            }
+            if (claim.Value == "Jefe de RRHH")
+            {
+                Rol = "Jefe de RRHH";
+            }
+        }
+    }
+}
+
+
+
+    
+<div class="container">
+    <form asp-action="Profile" method="post">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <h3 class="text-center text-success">Perfil</h3>
+
+                    <div class="form-group">
+                        <span class="input-group-text"><i class="fas fa-user m-2"></i>  Name: @Model.Name</span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-group-text"><i class="fa-solid fa-user-tag m-2"></i>  Username: @Model.Username</span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-group-text"><i class="fa-solid fa-clipboard-user m-2"></i>  Rol: @Model.Rol</span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope-circle-check m-2"></i>  Email: @Model.Email</span>
+                    </div>
+                    <a class="btn btn-outline-success col-12" asp-controller="Usuarios" asp-action="EditarUsuario"
+                        asp-route-userId="@Model.UsersId"><i class="fa-solid fa-user-pen"></i> Actualizar Contraseña y/o Datos</a>
+                    <a class="btn btn-outline-success mt-3 col-12" asp-controller="Home" asp-action="Clientes"><i class="fa-solid fa-rotate-left"></i> Volver al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</div>
+   
+
+   
+

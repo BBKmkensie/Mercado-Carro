@@ -1,0 +1,27 @@
+﻿@model List<Pedido>
+<h2 class="text-center">Resumen de la Compra</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Fecha</th>
+            <th>Total</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.PedidoId</td>
+                <td>@item.FechaPedido</td>
+                <td>@string.Format(new System.Globalization.CultureInfo("es-CL"), "{0:C}", item.Total)</td>
+                 <td>
+                    <a asp-action="DetallePedido" asp-controller="Auth" asp-route-PedidoId="@item.PedidoId"><i class="fas fa-info-circle"></i></a>
+                 </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

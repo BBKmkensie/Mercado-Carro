@@ -1,0 +1,28 @@
+﻿@model RecuperarPassViewModel
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="RecuperarPass" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Correo" class="control-label"></label>
+                <input asp-for="Correo" class="form-control" />
+                <span asp-validation-for="Correo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Nueva Contraseña</label>
+                <input type="password" asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Recuperar" class="btn btn-danger col-12" />
+            </div>
+        </form>
+    </div>
+    
+    
+</div>
+
+<div>
+    <a asp-action="LoginIn" class="text-danger"><i class="fa-solid fa-arrow-left"></i></a>
+</div>

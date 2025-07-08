@@ -1,0 +1,53 @@
+﻿@model CarroViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center">Resumen de la Compra</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Producto</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Carro.ItemsCarro)
+        {
+            <tr>
+                <td>@item.Producto.ProductId</td>
+                <td>@item.Producto.Nombre</td>
+                <td>@string.Format(new System.Globalization.CultureInfo("es-CL"), "{0:C}", item.Producto.Precio)</td>
+                <td>@item.Cantidad</td>
+                <td>@string.Format(new System.Globalization.CultureInfo("es-CL"), "{0:C}", item.Cantidad * item.Producto.Precio)</td>
+                <td>
+                    <a asp-action="DetalleProducto" asp-controller="Cliente" asp-route-id="@item.Producto.ProductId"><i class="fas fa-info-circle"></i></a>
+                    <a asp-action="Del" asp-route-id="@item.Producto.ProductId"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"></td>
+            <td>Total:</td>
+            <td colspan="2">@string.Format(new System.Globalization.CultureInfo("es-CL"), "{0:C}", Model.Total)</td>
+        </tr>
+    </tfoot>
+</table>
+@if (Model.Total > 0)
+{
+    
+        <a asp-controller="Pedido" asp-action="ConfirmarPedidoPost"
+            class="btn btn-outline-success text-black-50 float-md-right">Finalizar Pedido</a>
+    
+    
+}
+
